@@ -77,7 +77,7 @@ ROOT_URLCONF = 'Motty.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, '../../templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -100,19 +100,6 @@ REST_FRAMEWORK = {
     ],
 }
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mottydb',
-        'USER': 'motty_user',
-        'PASSWORD': 'motty_user',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
