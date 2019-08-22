@@ -18,7 +18,9 @@ from django.conf.urls import url
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.documentation import include_docs_urls
 
+API_TITLE = 'Motty Backend APIs'
 
 urlpatterns = [
 
@@ -27,6 +29,7 @@ urlpatterns = [
     url(r'^api/v1/rest-auth/', include('rest_auth.urls')),
     url(r'^api/v1/rest-auth/registration/', include('rest_auth.registration.urls')),
     url(r'^api/v1/password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),
+    url(r'^api/v1/docs/', include_docs_urls(title=API_TITLE)),
     path('admin/', admin.site.urls),
 
 ]
