@@ -173,6 +173,10 @@ dmypy.json
 *.iml
 *.ipr
 
+
+.idea/Motty.iml
+.idea/misc.xml
+
 # CMake
 cmake-build-*/
 
